@@ -1,9 +1,0 @@
-report_data
-We will need to add a new hyperparameter
-Works OK
-TEST RUN 01
-GITHUB-REPO01
-01-test.ipynb
-1
-Test data
-"{'mae': 2.0, 'rmse': 3.5, 'auc': 2.1}"
