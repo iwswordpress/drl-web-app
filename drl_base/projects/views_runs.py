@@ -46,8 +46,11 @@ def createRunCSV(request):
 
                 uploads_location = settings.MEDIA_ROOT
                 print('location', uploads_location)
+                # LOCAL
+                # csv_filename = str(uploads_location) + \
+                #     '\\data\\' + str(uploaded_file)
                 csv_filename = str(uploads_location) + \
-                    '\\data\\' + str(uploaded_file)
+                    '/data/' + str(uploaded_file)
                 print('csv_filename', csv_filename)
 
                 run.notebook_file = uploaded_file
