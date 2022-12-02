@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Main Section -->
+<main class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+  <div class="mb-8">
+    <a href="{% url 'projects:projects' %}" class="font-bold text-blue-500 hover:text-blue-300">
+      <i class="fas fa-backward fa-fw"></i>BACK TO ALL PROJECTS</a>
+  </div>
+
+
+  <!-- CARD -->
+  <div class="max-w-sm w-full lg:max-w-full lg:flex">
+    <div
+      class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+      style="background-image: url('{{ project.featured_image.url }}')" title="Woman holding a mug">
+    </div>
+    <div
+      class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div class="mb-8">
+
+        <div class="text-gray-900 font-bold text-xl mb-2">{{project.title}}</div>
+        <p class="text-gray-700 text-base">{{project.description}}</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- CARD -->
+
+</main>
+
+{% endblock %}
